@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="music-card">
+    <h2 class="title">ALl Too Well</h2>
+    <p class="artist">Taylor Swift</p>
+
+    <div class="progress-container">
+      <span class="time" id="currentTime">0:00</span>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span class="time" id="duration">0:00</span>
+    </div>
+
+    <div class="controls">
+      <button class="icon" onclick="showHearts()" aria-label="Like">♡</button>
+      <button class="play-btn" onclick="togglePlay()" aria-label="Play/Pause">⏸️</button>
+      <button class="icon" aria-label="Music Note">🎵</button>
+    </div>
+
+    <div class="lyrics" id="lyrics"></div>
+
+    <audio id="audio" src="song.mp3"></audio>
+    <div id="heart-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
